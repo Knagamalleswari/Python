@@ -1,0 +1,507 @@
+                                     PYTHON:-
+_____________________________________________________________________________
+->python is a programming language.
+->It is invented by guido van rossum began in 1989. He is a datch programmer.
+->It is object-oriented and hight level and scripting language.
+->python word comes in monty python flying circus bbc show It is a one of the 1970's famous comic book name.
+->user friendly.
+->Extension is .py
+->In python No.of modules or frame works etc.
+->compiler means  check high level to low level at a time.
+->Interpreter means  check line by line low level to high level.
+
+                    
+                    Interpreter
+
+source code --->compiler--->byte code--->virtual machine--->output
+  ||                          ||                ||
+ .py                          .pyc              ||
+                                           lib/module/framewoks/pacakges
+
+
+Comments:-
+---------------------------------------------
+->single line comments -> #
+->Multi line Comments -> "' '"  ->thrible quotes
+
+program:-
+#Sinle line
+print("single line comments")
+
+'''
+hi
+hello
+welcome
+'''
+print("Multi line comments")
+
+Variables:-
+--------------------------
+which can store a value.
+
+ Syntax:variable=value
+Rules:
+->Don't start first numbers.
+->starting letter should be alphates and underscope
+->case sensitive
+
+#varaible syntax:varaible=value
+a="Malli"
+print(a)
+
+#error
+#x,y,z=1
+#print(x,y,z)
+
+c=1,2,3
+print(c)
+
+c=v=d=20
+
+pqr=1
+print(pqr)
+
+#error
+#123=2
+# #print(123)
+
+_p=10
+print(_p)
+
+hi=21
+HI=22
+print(HI)
+print(hi)
+
+Data types:-
+------------------------------------------
+->Type of a value
+
+                  Datatypes
+        ________________________________________
+
+int                                                  list []            frozenset
+float                                                Tuple()             None
+boolean                                              set{}
+string                                                Dictionary{}
+complex - 1+3j -- 1 is the real 3j is the imaginary
+
+Tuple:-
+--------------
+-> write()
+->immutable(can't change)
+Tuple-methods:
+membership-->in
+
+k=(1,4,'a',"malli")
+print(type(k))
+
+get value in tuple:
+print(k[2])
+
+repetations:
+print(k*2)
+
+concatenation:
+adding
+a=(1,2,3)
+b=(1,2,3)
+print(a+b)
+
+member ship:
+k=(1,2,'a',"hello")
+print(2 in k)
+
+Tuple Functions:-
+--------------------
+a=(1,2,3'a')
+print(min(a))
+print(max(a))
+print(sum(a))
+
+Set:-
+-----------------
+->defined by{}
+->Don't allow duplicates
+->no index unordered
+->Dont't allow mutable types
+
+set Method:-
+-----------------
+s={}
+print(type(s))
+
+add()
+s={1,2,3,4}
+s.add(6)
+print(s)
+
+update()
+s={1,2,3,4}
+s.update({6,9,0})
+print(s)
+
+pop()
+random del on eelement
+
+remove()
+remove particular element
+
+set Operations:-
+-----------------------
+uninon()
+output will come all data
+set1={1,2,3}
+set2={5,7,9}
+print(set1.union(set2))
+
+intersection()
+output will come only common data
+set1={1,2,3}
+set2={5,7,9,1}
+print(set1.intersection(set2))
+
+difference()
+only del common data
+set1={1,2,3}
+set2={5,7,9,1}
+print(set1.difference(set2))
+
+issubset()
+set2 lo unna motham elements set1 lo undali
+unte true ledhante false
+
+set1={1,2,3}
+set2={5,7,9,1}
+print(set2.issubset(set1))
+
+issuperset()
+set1 lo unna motham elements set2 lo undali
+unte true ledhante false
+set1={1,2,3}
+set2={5,7,9,1}
+print(set1.issubset(set2))
+
+
+for i in {1,2,3}
+print(i)
+
+Dictionary:-
+---------------------
+->defined by{}
+->key,value data(k:v,k:v)
+->key should be immutable(no chage)
+->value is mutable
+->key will acts as a index
+->keys are unique
+->no slicing(no index)
+
+Dict Methods:-
+-------------
+d={}
+print(type(d))
+
+d={1:"malli",2:"hi"}
+print(d[1])
+
+get()
+
+d={1:"malli",2:"hi"}
+print(d.get(1))
+
+update()
+d={1:"malli",2:"hi"}
+print(d.update(5:"k"))
+print(d)
+
+values()
+d={1:"malli",2:"hi"}
+print(d.values())
+
+keys()
+d={1:"malli",2:"hi"}
+print(d.keys())
+
+items()
+d={1:"malli",2:"hi"}
+print(d.items())
+
+
+
+program:-
+a=10
+print(a)
+
+b=1.4
+print(b)
+ 
+c='hi'
+print(c)
+
+d=True
+e=False
+print(type(d),type(e))
+
+print(True==1)
+print(False==0)
+
+f=3+5j
+print(f)
+
+#Type Casting
+
+m=2
+print(float(m))
+
+i=2.2
+print(int(i))
+
+#data lose-->explicit type conversion
+ #no data lose-->implicit type conversion
+
+Type errors:-
+-----------------------------------------
+system error
+indentation error
+index error
+keyerror
+Nameerror
+Typeerror
+valueerror
+Modulenotfounderror
+UnboundLocalerror
+Attribute error
+FileNotFoundError
+
+
+
+
+control statements:-
+-------------------------------------------
+
+conditional                         Looping                Jumping statements
+   ||                                ||                        ||
+if                                   for                      pass
+else                                while                    continue
+elif                            nested loops                 break
+nestedif
+
+
+
+
+
+
+
+Lists:-
+---------------------------------
+list is a data structure.
+it will store different datatypes.
+defined by Square brackets []
+defind  0 index
+
+hi=[1,2.3,"ji"]
+print(type(hi))
+
+nested list:-
+hello=[1,2.3[w,6]3]
+       0  1  0 1 0
+
+print(hello[0][0])
+
+List Methods:-
+-------------------
+append  -->[1,2,3]==> add one element in last
+extend   --> ==>add one list in last
+remove   -->         ==>remove one elemnt in last
+insert   -->          ==>insert an elemnt in a paricular place.
+index    -->         ==>tell which place
+count    -->         ==>how many times num is there
+
+hi=[1,2.3,'malli',True]
+print(hi)
+
+hi.append(5)
+print(type(hi))
+print(hi)
+
+hi.extend([4,5,6])
+print(hi)
+
+hi.insert(1,'hello')
+print(hi)
+
+
+print(hi.count(5))
+
+
+print(len(hi))
+
+print(hi.pop(0))   #remove
+
+a=[12,13,14,19,20,15,16]
+a.reverse()
+print(a)
+
+print(a.sort())
+print(a)
+
+for i in a:
+    print(i)
+
+
+hello = [1,2.2,3,[4,5,6],9,0] 
+print(hello[3][1])
+
+->clear()->remove all
+->copy()->copies the original list
+->remove(3)->remove only 1st 3 number
+->sort()=>default false ,boolean values
+insert()=>(position,change element)
+
+
+nested list:-
+[["name"],[["name1"],["name2"]]]
+nested_list[1][1][0]
+
+
+
+output:-
+ [1, 2.3, 'malli', True]
+<class 'list'>
+[1, 2.3, 'malli', True, 5]
+[1, 2.3, 'malli', True, 5, 4, 5, 6]
+[1, 'hello', 2.3, 'malli', True, 5, 4, 5, 6]
+2
+9
+1
+[16, 15, 20, 19, 14, 13, 12]
+None
+[12, 13, 14, 15, 16, 19, 20]
+12
+13
+14
+15
+16
+19
+20
+5
+print(hello[3][1])
+
+Random Module:-
+----------------------------
+import random 
+
+print(random.random())         ---->random values between 0 to 1 
+
+print(random.randrange(1,7,2)) ---->random values given range with step down
+
+print(random.randint(1,10))  ------>random integers  given range 
+
+
+a=["hi","hello","welcome"]
+print(random.choice(a))     ------->show random value only one in list
+
+
+i=['A','B','C']
+random.shuffle(i)          ------>chage place every time randomly
+print(i)
+
+c=[2,5,3,1]
+random.shuffle(c)
+print(c)
+
+print(random.sample([1,2,3,4,5],2))     ----->show only two values here randomly
+print(random.sample((10,20,30),1))
+
+print(random.choices(('a','d','g','h'),k=2))    ---->show only two values here randomly
+
+print(random.uniform(67,89))     ----->show ramdom float value given range
+
+
+print(random.randint(2,10))
+print(random.seed((4)))        ----->save the random value
+print(random.randint(2,10))
+
+
+
+for loop:-
+------------------------
+enni iterations manaki thelisinappudu for use chesthaam.
+Program:
+
+list=["hello","hi"]
+for i in list:
+print(i) 
+
+while loop:-
+--------------------------------------
+enni iterations manaki theliyanappudu while use chesthaam.
+
+Program:
+
+n=10
+print(n<10)
+while n <10:
+print("x")
+n += 1
+
+continue:
+------------------
+ekkadithe continue isthamo adhi skip avuthundhi.
+
+break:
+---------------------
+ekkadithe break isthamo dhaani mundhu varaku print ayyi,break dhaggara aagipodhi.
+
+
+program:
+--------
+num = 0
+age = 20
+print(num <10)
+while age <10:
+  if age>=19:
+     pass
+   else:
+     print()
+  num +=1
+
+
+functions:-
+-------------------------------
+->code reusability
+->any whre we will call the function.
+
+def fun():
+print("hi")
+
+keyword aguements :-
+--------------------------------
+def fun(name,age):
+  print("name",age)
+fun(30 "ok")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
